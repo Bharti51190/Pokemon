@@ -1,0 +1,30 @@
+table {
+    width: 95%;
+    margin: 0 0 0 30px;
+}
+
+td, th, .mat-header-cell, td.mat-cell {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.comma:not(:first-child) {
+  margin-left: -.3em;  
+}
+
+.comma:first-child:empty ~ .comma:not(:empty) {
+  margin-left: 0;  
+}
+.comma:first-child:empty ~ .comma:not(:empty) ~ .comma:not(:empty) {
+  margin-left: 0;  
+}
+
+.comma:empty {
+    display: none;
+}
+
+.comma:not(:first-child):before {
+    content: ",";
+}
+
